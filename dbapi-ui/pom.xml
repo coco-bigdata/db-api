@@ -24,7 +24,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
-                    <execution>
+                    <!--<execution>
                         <id>exec-npm-install</id>
                         <phase>validate</phase>
                         <goals>
@@ -37,7 +37,7 @@
                             </arguments>
                             <workingDirectory>${basedir}</workingDirectory>
                         </configuration>
-                    </execution>
+                    </execution>-->
 
                     <execution>
                         <id>exec-npm-run-build</id>
