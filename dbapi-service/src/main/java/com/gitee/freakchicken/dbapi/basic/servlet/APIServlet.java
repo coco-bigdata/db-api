@@ -86,7 +86,7 @@ public class APIServlet extends HttpServlet {
 
     public ResponseDto process(String path, HttpServletRequest request, HttpServletResponse response) throws SQLException {
 
-//            // 校验接口是否存在
+        // 校验接口是否存在
         ApiConfig config = apiConfigService.getConfig(path);
         if (config == null) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
@@ -101,7 +101,7 @@ public class APIServlet extends HttpServlet {
 
         Map<String, Object> sqlParam = apiService.getSqlParam(request, config);
 
-        //从缓存获取数据
+        // 从缓存获取数据
         if (StringUtils.isNoneBlank(config.getCachePlugin())) {
             CachePlugin cachePlugin = PluginManager.getCachePlugin(config.getCachePlugin());
             Object o = cachePlugin.get(config, sqlParam);
