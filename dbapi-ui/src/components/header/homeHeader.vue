@@ -1,6 +1,6 @@
 <template>
   <div class="head">
-    <div class="logo">DBApi</div>
+    <div class="logo">数据接口</div>
     <div class="menus">
       <div class="menu iconfont icon-database" @click="clickMenu('/datasource')">
         {{ $t('m.datasource') }}
