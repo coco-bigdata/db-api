@@ -6,4 +6,4 @@ cd $ROOT_DIR
 VERSION=$(mvn -q -DforceStdout -N org.apache.maven.plugins:maven-help-plugin:3.2.0:evaluate -Dexpression=project.version)
 TAG=${TAG:-"$VERSION"}
 
-docker push freakchicken/db-api:$TAG
+docker push yiluxiangbei/db-api:$TAG
