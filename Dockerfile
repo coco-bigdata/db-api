@@ -1,4 +1,4 @@
-FROM freakchicken/java8:1.0
+FROM yiluxiangbei/java8:1.0
 
 ARG VERSION
 ENV DOCKER true
