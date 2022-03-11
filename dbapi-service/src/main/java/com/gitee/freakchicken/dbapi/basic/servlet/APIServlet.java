@@ -171,7 +171,7 @@ public class APIServlet extends HttpServlet {
         }
     }
 
-/*    private JSONObject getJsonInfo(HttpServletRequest request) {
+    /*private JSONObject getJsonInfo(HttpServletRequest request) {
         try {
             InputStreamReader in = new InputStreamReader(request.getInputStream(), "utf-8");
             BufferedReader br = new BufferedReader(in);
