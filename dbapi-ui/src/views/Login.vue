@@ -2,7 +2,7 @@
   <div class="box body-bg">
     <div class="content">
       <div class="item header">
-        DBAPI
+        数据接口
       </div>
       <div class="item">
         <el-input v-model="username" :placeholder="$t('m.username')"></el-input>
